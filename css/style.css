@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -131,3 +132,94 @@ footer {
 
 .card {
   margin: 3rem; }
+
+* {
+  margin: 0;
+  padding: 0pc; }
+
+.nosotros {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border: solid 16px #8beffc;
+  align-items: center;
+  height: 100vh; }
+  .nosotros .sobreNosotros {
+    margin: 2rem;
+    color: white;
+    background-color: #3e0acc;
+    width: 50rem;
+    text-align: center; }
+  .nosotros p {
+    border: 15px black;
+    border-radius: 15px;
+    width: 50rem;
+    margin: 3rem; }
+  .nosotros img {
+    width: 500px;
+    margin: 2rem; }
+  .nosotros .contactanos {
+    max-width: 120px;
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: 15px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/* DISEÑO FORMULARIO DE CONTACTO */
+.form {
+  position: relative;
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh; }
+  .form h3 {
+    font-size: 2rem;
+    margin: 2rem; }
+  .form div {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem; }
+    .form div input {
+      height: 2.5rem;
+      width: 350px;
+      border-radius: 15px;
+      background-color: #c6c6c6;
+      text-align: center;
+      margin-top: 1rem; }
+      .form div input:hover {
+        background-color: #111;
+        color: #fff; }
+    .form div .submit {
+      animation-name: cambioColor;
+      animation-duration: 10s;
+      animation-iteration-count: infinite; }
+
+/* Animaciones - keyframes */
+@keyframes cambioColor {
+  0% {
+    background-color: #0011ff; }
+  25% {
+    background-color: aquamarine; }
+  50% {
+    background-color: #5a7ef7; }
+  100% {
+    background-color: #2658e2; } }
+
+/* responsive designe media queries mobile last */
+/* mobile last - max-widht */
+@media (max-width: 768px) {
+  .carousel-item h5 {
+    font-size: 15px;
+    background-color: #2e54fa;
+    opacity: 0.4;
+    color: #fff; }
+  .carousel-inner {
+    overflow: auto; }
+  .carousel-item {
+    max-height: 40vh; }
+  .card {
+    margin: .3rem; } }

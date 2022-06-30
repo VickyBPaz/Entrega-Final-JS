@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0pc;
+}
+
+    .nosotros {
+    
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        border: solid 16px rgb(139, 239, 252);
+        align-items: center;
+        height: 100vh;
+
+        .sobreNosotros {
+            margin: 2rem;
+            color: white;
+            background-color: rgb(62, 10, 204);
+            width:   50rem;
+            text-align: center;
+
+        }
+        p {
+            border: 15px black;
+            border-radius: 15px;
+            width:   50rem;
+            margin: 3rem;
+        }
+        img {
+            width: 500px;
+            margin: 2rem;
+        }
+        .contactanos{
+            max-width: 120px;
+            padding: 1rem;
+            margin: .5rem;
+            border-radius: 15px;
+        }
+    }
