@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//logo//
+.navbar-brand {
+    .img {
+        width: 100px;
+    }
+}
+
+//LINKS DEL NAV//
+.navbar-nav {
+    .nav-item {
+        a {
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+
+            &:focus {
+                color: orange;
+            }
+        }
+    }
+}
+
+/* carousel */
+
+.carousel-item {
+    height: 55vh;
+    font-size: 30px;
+
+    .carousel-caption {
+        h5 {
+            font-size: 50px;
+            background-color: rgb(46, 84, 250);
+            opacity: 0.4;
+            color: #fff;
+        }
+
+        h6 {
+            font-size: 50px;
+            color: rgba(24, 2, 2, 0.863);
+            background-color: #fff;
+            opacity: 0.4;
+        }
+    }
+
+    img {
+        width: 100px;
+
+        &:hover {
+            filter: blur(5px);
+        }
+    }
+
+}
+
+/* Cards con Servicios */
+.row {
+    .nuestrosServicios{
+        font-size: 3rem; 
+        color: rgb(8, 8, 8);
+        background-color: #cadcf3; 
+        text-align: center; 
+        background-color: rgba (255, 0, 0, 0.4);
+        padding: 2rem;
+    }
+}
+
+.card {
+    margin: 10px;
+    border-radius: 30px;
+    border: 2px solid rgba(14, 55, 131, 0.404);
+
+    .card-title {
+        padding: 1rem;
+        border: dotted 2px rgba(14, 55, 131, 0.404);
+    }
+
+    img {
+        width: 250px;
+        margin-top: 1rem;
+
+        &:hover {
+            filter: opacity(.8);
+        }
+    }
+
+    a {
+        color: #fff;
+        background-color: #0b51e5;
+        background-image: linear-gradient(49deg, #0b51e5 0%, #90ccf0 71%);
+
+    }
+
+    .btn:hover {
+        transform: scale(1, 1.1);
+        transition: opacity 1;
+        transition: 3seg;
+
+        &:focus {
+            background: rgba(2, 7, 24, 0.123);
+            color: rgb(5, 151, 170);
+            font-weight: 3px;
+        }
+
+    }
+
+}
+
+/* footer */
+
+footer {
+    height: 25hg;
+    font-family: "Open Sans";
+    margin-top: 3rem;
+
+
+    .footer-content {
+        margin-top: 4rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: #111;
+        opacity: 5px;
+        color: #fff;
+        opacity: 0.5;
+
+        .h3Footer {
+            font-size: 2rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+
+        p {
+            max-width: 500px;
+            margin: 10px suto;
+            line-height: 28px;
+            font-size: 1.2rem;
+        }
+
+        .redes {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 1 rem 0;
+
+            a {
+                text-decoration: none;
+                margin: 2rem;
+                color: #fff;
+
+                &:hover i {
+                    color: aqua;
+                }
+
+            }
+
+        }
+
+    }
+
+    .fondo-footer {
+        background: #111;
+        opacity: 80%;
+        width: 100vw;
+        padding: 20px 0;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+/* responsive designe media queries mobile last */
+/* mobile last - max-widht */
+
+@media (max-width: 768px) {
+    .carousel-inner {
+        overflow: auto;
+
+        .carousel-item {
+            height: 40vh;
+            font-size: 15px;
+
+            .carousel-caption {
+                h5 {
+                    font-size: 1000px;
+                }
+
+                h6 {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.card {
+    margin: 3rem;
+}

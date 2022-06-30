@@ -1,0 +1,154 @@
+.img {
+    width: 100px;
+}
+
+.img:hover {
+    filter: blur(5px);
+}
+
+.nav-link {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+/* carousel */
+.carousel-item {
+    height: 55vh;
+    font-size: 30px;
+
+}
+
+.carousel-item h5 {
+    font-size: 50px;
+    background-color: rgb(46, 84, 250);
+    opacity: 0.4;
+    color: #fff;
+
+}
+
+/* Cards con Servicios */
+
+.card {
+    margin: 10px;
+    border-radius: 25px;
+    border: 2px solid rgba(0, 89, 255, 0.733);
+}
+.card a {
+    color: #fff;
+    background-color: #0b51e5;
+    background-image: linear-gradient(49deg, #0b51e5 0%, #90ccf0 71%);
+}
+
+.card img:hover {
+    filter: opacity(.8);
+
+}
+
+.card img {
+    height: 220px;
+    margin-top: 1rem;
+}
+
+.h5 {
+    padding: 2rem;
+ 
+    /* boton de las cards */
+}
+.btn:hover {
+    transform: scale(1,1.1);
+    transition: opacity 1;
+    transition: 3seg;
+
+}
+
+.btn:focus {
+    background: rgba(2, 7, 24, 0.123);
+    color: rgb(5, 151, 170);
+    font-weight: 3px;
+}
+
+/* footer */
+
+.footer{
+
+    width: 25vh;
+    font-family: "Open Sans";
+    padding-top: 40px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #111;
+    color: #fff;
+    opacity: 70%;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px suto;
+    line-height: 28px;
+    font-size: 1rem;
+} 
+
+.redes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1 rem 0 ;
+}
+.redes li{
+margin: 0 10px;
+}
+
+.redes a{
+    text-decoration: none;
+    color: #fff;
+}
+.redes a:hover i{
+color: aqua;
+}
+
+.fondo-footer{
+    background: #111;
+    opacity: 80%;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* DISEÑO FORMULARIO DE CONTACTO */
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 30px;
+    color: #36A0FF;
+    justify-content: center;
+
+    
+}
+
+.contacto {
+    background-color: rgb(76, 89, 92);
+}
+
+.btn {
+    margin-top: 2rem;
+}
+
+/* animacion del borde de las cards */
