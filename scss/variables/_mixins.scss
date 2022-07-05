@@ -1,0 +1,13 @@
+@mixin btn-contactanos($colorFondo, $colorLetra){
+    background-color: $colorFondo;
+    color: $colorLetra;
+}
+
+@mixin link-nav($colorLetra, $tamanioLetra){
+    color: $colorLetra;
+    font-size: $tamanioLetra;
+}
+@mixin card-title($colorLetra, $colorFondo){
+    background-color: $colorFondo;
+    color: $colorLetra;
+}

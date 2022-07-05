@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.card {
+    @extend %card;
+
+    .card-body {
+
+        .card-title {
+            @extend %card-title;
+
+        }
+
+        a {
+            color: #fff;
+            background-color: #0b51e5;
+            background-image: linear-gradient(49deg, #0b51e5 0%, #90ccf0 71%);
+
+        }
+
+        .btn:hover {
+            transform: scale(1, 1.1);
+            transition: opacity 1;
+            transition: 3seg;
+
+            &:focus {
+                background: rgba(2, 7, 24, 0.123);
+                color: rgb(5, 151, 170);
+                font-weight: 3px;
+            }
+
+            .lista {
+                list-style: none;
+            }
+
+        }
+
+        .card-text {
+                max-width: 1000px;
+                margin-top: 1rem;
+
+                &:hover {
+                    filter: opacity(.8);
+                }
+
+
+
+        }
+    }
+}

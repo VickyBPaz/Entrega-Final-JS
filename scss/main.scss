@@ -2,9 +2,20 @@
     margin: 0;
     padding: 0;
 }
+//variables
+
+@import './variables/tipografias';
+@import './variables/_tamanios';
+@import './variables/extend';
+@import './variables/mixins';
+
+//Secciones
+
+@import './secciones/cards';
 @import './secciones/index';
 @import './secciones/sobreNosotros';
 @import './secciones/contacto';
+@import './secciones/servicios';
 
 
 

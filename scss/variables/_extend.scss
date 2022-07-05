@@ -1,0 +1,47 @@
+%estiloParrafo {
+    font-family: $Oswald;
+    font-size: 18px;
+    color: rgb(26, 25, 25);
+    margin: 2rem;
+    padding: 1rem;
+}
+
+%button {
+    max-width: 130px;
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: 15px;
+
+    &:hover {
+        background-color: darken($color: rgb(17, 17, 221), $amount: 20);
+        color: rgb(131, 219, 241);
+        font-weight: 100;
+        transition: .3s;
+        transform: scale(1,1.2);
+    }
+
+}
+
+%titulo {
+    margin: 1rem;
+    color: rgb(238, 112, 9);
+    text-align: left;
+    font-family: $Oswald;
+    padding: 1rem;
+
+}
+
+%card {
+    margin: 10px;
+    border-radius: 30px;
+    border: 2px solid rgba(14, 55, 131, 0.404);
+    height: 450px;
+    width: 350px;
+}
+
+%card-title {
+    padding: 1rem;
+    border: dotted 2px rgba(14, 55, 131, 0.404);
+    border-radius: 15px;
+}
+

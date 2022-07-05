@@ -3,37 +3,54 @@
     padding: 0pc;
 }
 
+Section {
+
+    h1 {
+        @extend %titulo;
+    }
+
     .nosotros {
-    
-        height: 100vh;
+        height: 45vh;
         display: flex;
         flex-direction: column;
-        border: solid 16px rgb(139, 239, 252);
-        align-items: center;
-        height: 100vh;
+        border-top: solid 12px rgb(45, 4, 192);
+        flex-direction: row;
+        align-items: flex-start;
 
-        .sobreNosotros {
-            margin: 2rem;
-            color: white;
-            background-color: rgb(62, 10, 204);
-            width:   50rem;
-            text-align: center;
-
-        }
-        p {
-            border: 15px black;
-            border-radius: 15px;
-            width:   50rem;
-            margin: 3rem;
-        }
         img {
-            width: 500px;
-            margin: 2rem;
+            max-width: 400px;
+            margin: 3rem;
+
+            &:hover {
+                filter: opacity(.8);
+            }
         }
-        .contactanos{
-            max-width: 120px;
-            padding: 1rem;
-            margin: .5rem;
-            border-radius: 15px;
+
+        p {
+            max-width: 450px;
+            @extend %estiloParrafo;
+            span{
+                color: orangered;
+                font-size: 25px;
+                font-weight: 100;
+            }
+
+            .contactanos {
+                margin-top: 1rem;
+                @extend %button;
+                @include btn-contactanos(rgb(45, 103, 211), white)
+            }
+
         }
     }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .sobreNosotros {
+        font-size: 25px
+    }
+}

@@ -1,0 +1,16 @@
+Modificaciones de SEO:
+
+Aplique las siguientes modificaciones:
+
+- Todos los HTML tienen un h1.-
+- Vincule mi logo con el inicio.-
+. Aplique en todos los HTML las siguientes etiquetas META:
+KEYWORDS - aplique las palabras clave a cada html.-
+META Description: Se agrego a cada HTLM, una breve descripcion de cada una.-
+
+
+- Cada pagina tiene un titulo unico.-
+- El titulo de mi pagina principal, es el titulo de la marca.-
+- Optimice las imagenes.-
+
+
