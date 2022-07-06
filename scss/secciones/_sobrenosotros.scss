@@ -47,36 +47,17 @@ Section {
     }
 }
 
-
-
-
+/* responsive designe media queries mobile last */
+/* mobile last - max-widht */
 
 @media (max-width: 768px) {
     Section {
-
         .nosotros {
             flex-direction: column;
             height: 130vh;
-
         }
-
         img {
             max-width: 250px;
         }
-    }
-
-    footer {
-        margin-bottom: 0;
-        .footer-content{
-            .h3Footer{
-            }
-            .redes{
-                list-style: none;
-                text-decoration: none;
-                display: flex;
-                flex-direction: row;
-                align-self: auto;
-            }
-        }
-    }
+}
 }
