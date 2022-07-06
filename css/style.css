@@ -76,24 +76,24 @@ footer {
       font-weight: 400;
       text-transform: capitalize;
       line-height: 3rem; }
-      footer .footer-content .h3Footer p {
-        max-width: 500px;
-        margin: 10px suto;
-        line-height: 28px;
-        font-size: 1.2rem; }
-      footer .footer-content .h3Footer .redes {
+    footer .footer-content p {
+      max-width: 500px;
+      margin: 10px suto;
+      line-height: 28px;
+      font-size: 1.2rem; }
+    footer .footer-content .redes {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0 1 rem 0; }
+      footer .footer-content .redes a {
         text-decoration: none;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin: 1rem 0 1 rem 0; }
-        footer .footer-content .h3Footer .redes a {
-          text-decoration: none;
-          margin: 2rem;
-          color: #fff; }
-          footer .footer-content .h3Footer .redes a:hover i {
-            color: aqua; }
+        margin: 2rem;
+        color: #fff; }
+        footer .footer-content .redes a:hover i {
+          color: aqua; }
   footer .fondo-footer {
     background: #111;
     opacity: 80%;
