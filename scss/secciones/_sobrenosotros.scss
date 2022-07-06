@@ -29,7 +29,8 @@ Section {
         p {
             max-width: 450px;
             @extend %estiloParrafo;
-            span{
+
+            span {
                 color: orangered;
                 font-size: 25px;
                 font-weight: 100;
@@ -38,7 +39,8 @@ Section {
             .contactanos {
                 margin-top: 1rem;
                 @extend %button;
-                @include btn-contactanos(rgb(45, 103, 211), white)
+                @include btn-contactanos(rgb(45, 103, 211), white);
+                text-decoration: none;
             }
 
         }
@@ -50,7 +52,31 @@ Section {
 
 
 @media (max-width: 768px) {
-    .sobreNosotros {
-        font-size: 25px
+    Section {
+
+        .nosotros {
+            flex-direction: column;
+            height: 130vh;
+
+        }
+
+        img {
+            max-width: 250px;
+        }
+    }
+
+    footer {
+        margin-bottom: 0;
+        .footer-content{
+            .h3Footer{
+            }
+            .redes{
+                list-style: none;
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                align-self: auto;
+            }
+        }
     }
 }

@@ -6,6 +6,12 @@
 
 .card {
     @extend %card;
+    &:hover {
+        background-color: darken($color: #9ab7f7e3, $amount: 0);
+        transform: scale(1, 1.03);
+        transition: .3seg;
+        opacity: 0.5;
+    }
 
     .card-body {
 
@@ -32,22 +38,26 @@
                 font-weight: 3px;
             }
 
-            .lista {
-                list-style: none;
+        }
+
+        .card-text {
+            max-width: 1000px;
+            margin-top: 1rem;
+
+            &:hover {
+                filter: opacity(.8);
+            }
+
+            img {
+                width: 280px;
             }
 
         }
 
-        .card-text {
-                max-width: 1000px;
-                margin-top: 1rem;
-
-                &:hover {
-                    filter: opacity(.8);
-                }
-
-
-
+        .lista {
+            list-style: none;
+            @include lista(rgba(10, 48, 119, 0.719),16px)
+        
         }
     }
 }

@@ -11,3 +11,9 @@
     background-color: $colorFondo;
     color: $colorLetra;
 }
+
+@mixin lista($colorLetra, $tipoLetra) 
+{
+    color: $colorLetra;
+    font-size: $tipoLetra; 
+}

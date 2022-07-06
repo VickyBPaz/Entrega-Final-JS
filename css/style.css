@@ -5,19 +5,19 @@
   margin: 0;
   padding: 0; }
 
-Section .nosotros p {
+Section .reformas p, Section .nosotros p {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
   color: #1a1919;
   margin: 2rem;
   padding: 1rem; }
 
-Section .nosotros p .contactanos {
+Section .reformas p .contactanos, Section .nosotros p .contactanos {
   max-width: 130px;
   padding: .5rem;
   margin: .5rem;
   border-radius: 15px; }
-  Section .nosotros p .contactanos:hover {
+  Section .reformas p .contactanos:hover, Section .nosotros p .contactanos:hover {
     background-color: #0a0a7e;
     color: #83dbf1;
     font-weight: 100;
@@ -27,6 +27,13 @@ Section .nosotros p .contactanos {
 Section h1, .servicios {
   margin: 1rem;
   color: #ee7009;
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+  padding: 1rem; }
+
+Section h2 {
+  margin: 1rem;
+  color: rgba(238, 112, 9, 0.671);
   text-align: left;
   font-family: "Oswald", sans-serif;
   padding: 1rem; }
@@ -47,6 +54,54 @@ Section h1, .servicios {
   margin: 0;
   padding: 0; }
 
+Section .reformas {
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  border-top: solid 12px #2d04c0;
+  flex-direction: row;
+  align-items: flex-start; }
+  Section .reformas img {
+    max-width: 500px;
+    margin: 3rem; }
+    Section .reformas img:hover {
+      filter: opacity(0.8); }
+  Section .reformas p {
+    max-width: 450px; }
+    Section .reformas p span {
+      color: orangered;
+      font-size: 25px;
+      font-weight: 100; }
+    Section .reformas p .contactanos {
+      margin-top: 1rem;
+      background-color: #2d67d3;
+      color: white; }
+
+@media (max-width: 768px) {
+  Section .reformas {
+    flex-direction: column;
+    height: 130vh; }
+  Section img {
+    max-width: 250px; }
+  footer {
+    margin-bottom: 0; }
+    footer .footer-content .redes {
+      list-style: none;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      align-self: auto; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.card:hover {
+  background-color: rgba(154, 183, 247, 0.890196);
+  transform: scale(1, 1.03);
+  transition: .3seg;
+  opacity: 0.5; }
+
 .card .card-body a {
   color: #fff;
   background-color: #0b51e5;
@@ -60,14 +115,19 @@ Section h1, .servicios {
     background: rgba(2, 7, 24, 0.123);
     color: #0597aa;
     font-weight: 3px; }
-  .card .card-body .btn:hover .lista {
-    list-style: none; }
 
 .card .card-body .card-text {
   max-width: 1000px;
   margin-top: 1rem; }
   .card .card-body .card-text:hover {
     filter: opacity(0.8); }
+  .card .card-body .card-text img {
+    width: 280px; }
+
+.card .card-body .lista {
+  list-style: none;
+  color: rgba(10, 48, 119, 0.719);
+  font-size: 16px; }
 
 * {
   margin: 0;
@@ -111,7 +171,7 @@ Section h1, .servicios {
 
 /* footer */
 footer {
-  height: 25hg;
+  height: 25vh;
   font-family: "Open Sans";
   margin-top: 3rem; }
   footer .footer-content {
@@ -131,23 +191,23 @@ footer {
       font-weight: 400;
       text-transform: capitalize;
       line-height: 3rem; }
-    footer .footer-content p {
-      max-width: 500px;
-      margin: 10px suto;
-      line-height: 28px;
-      font-size: 1.2rem; }
-    footer .footer-content .redes {
-      list-style: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 1rem 0 1 rem 0; }
-      footer .footer-content .redes a {
-        text-decoration: none;
-        margin: 2rem;
-        color: #fff; }
-        footer .footer-content .redes a:hover i {
-          color: aqua; }
+      footer .footer-content .h3Footer p {
+        max-width: 500px;
+        margin: 10px suto;
+        line-height: 28px;
+        font-size: 1.2rem; }
+      footer .footer-content .h3Footer .redes {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 1 rem 0; }
+        footer .footer-content .h3Footer .redes a {
+          text-decoration: none;
+          margin: 2rem;
+          color: #fff; }
+          footer .footer-content .h3Footer .redes a:hover i {
+            color: aqua; }
   footer .fondo-footer {
     background: #111;
     opacity: 80%;
@@ -168,9 +228,6 @@ footer {
         font-size: 1000px; }
       .carousel-inner .carousel-item .carousel-caption h6 {
         font-size: 1rem; } }
-
-.card {
-  margin: 3rem; }
 
 * {
   margin: 0;
@@ -197,11 +254,23 @@ Section .nosotros {
     Section .nosotros p .contactanos {
       margin-top: 1rem;
       background-color: #2d67d3;
-      color: white; }
+      color: white;
+      text-decoration: none; }
 
 @media (max-width: 768px) {
-  .sobreNosotros {
-    font-size: 25px; } }
+  Section .nosotros {
+    flex-direction: column;
+    height: 130vh; }
+  Section img {
+    max-width: 250px; }
+  footer {
+    margin-bottom: 0; }
+    footer .footer-content .redes {
+      list-style: none;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      align-self: auto; } }
 
 * {
   margin: 0;
