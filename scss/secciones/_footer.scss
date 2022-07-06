@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 /* footer */
 
@@ -9,8 +8,6 @@ footer {
     height: 25vh;
     font-family: "Open Sans";
     margin-top: 3rem;
-    
-
 
     .footer-content {
         margin-top: 4rem;
@@ -24,14 +21,13 @@ footer {
         opacity: 5px;
         color: #fff;
         opacity: 0.5;
-        
+
         .h3Footer {
             font-size: 2rem;
             font-weight: 400;
             text-transform: capitalize;
             line-height: 3rem;
         
-
         p {
             max-width: 500px;
             margin: 10px suto;
@@ -40,7 +36,7 @@ footer {
         }
 
         .redes {
-            list-style: none;
+            text-decoration: none;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -62,8 +58,6 @@ footer {
 
     }
 }
-
-
     .fondo-footer {
         background: #111;
         opacity: 80%;
@@ -73,7 +67,6 @@ footer {
         color: #fff;
     }
 }
-
 
 /* responsive designe media queries mobile last */
 /* mobile last - max-widht */

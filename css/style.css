@@ -82,7 +82,7 @@ footer {
         line-height: 28px;
         font-size: 1.2rem; }
       footer .footer-content .h3Footer .redes {
-        list-style: none;
+        text-decoration: none;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -145,10 +145,10 @@ Section .reformas {
   padding: 0; }
 
 .card:hover {
-  background-color: rgba(154, 183, 247, 0.890196);
-  transform: scale(1, 1.03);
+  font-weight: 100;
+  transform: scale(1, 1.04);
   transition: .3seg;
-  opacity: 0.5; }
+  background-color: rgba(184, 179, 179, 0.842); }
 
 .card .card-body a {
   color: #fff;
