@@ -52,42 +52,47 @@
 }
 
 
-
-
-
 /* Cards con Servicios */
+
 .row {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
     .nuestrosServicios {
-        font-size: 3rem;
-        color: rgb(8, 8, 8);
-        background-color: #cadcf3;
+        @extend %titulo;
+        border: dotted #155efcbd;
+        border-radius: 2px;
         text-align: center;
-        background-color: rgba (255, 0, 0, 0.4);
-        padding: 2rem;
+
     }
 }
 
 
-/* responsive designe media queries mobile last */
-/* mobile last - max-widht */
 
-@media (max-width: 768px) {
-    .carousel-inner {
-        overflow: auto;
 
-        .carousel-item {
-            height: 40vh;
-            font-size: 15px;
 
-            .carousel-caption {
-                h5 {
-                    font-size: 1000px;
-                }
 
-                h6 {
-                    font-size: 1rem;
+    /* responsive designe media queries mobile last */
+    /* mobile last - max-widht */
+
+    @media (max-width: 768px) {
+        .carousel-inner {
+            overflow: auto;
+
+            .carousel-item {
+                height: 40vh;
+                font-size: 15px;
+
+                .carousel-caption {
+                    h5 {
+                        font-size: 1000px;
+                    }
+
+                    h6 {
+                        font-size: 1rem;
+                    }
                 }
             }
         }
     }
-}

@@ -7,10 +7,13 @@
 }
 
 %button {
-    max-width: 130px;
+    width: 180px;
     padding: .5rem;
     margin: .5rem;
     border-radius: 15px;
+    font-family: $Oswald;
+    text-decoration: none;
+    list-style: none;
 
     &:hover {
         background-color: darken($color: rgb(17, 17, 221), $amount: 20);
@@ -51,5 +54,6 @@
     padding: 1rem;
     border: dotted 2px rgba(14, 55, 131, 0.404);
     border-radius: 15px;
+    color: aliceblue;
 }
 

@@ -12,19 +12,22 @@ Section .reformas p, Section .nosotros p {
   margin: 2rem;
   padding: 1rem; }
 
-Section .reformas p .contactanos, Section .nosotros p .contactanos {
-  max-width: 130px;
+Section .reformas p .contactanos, .card .card-body a, Section .nosotros p .contactanos {
+  width: 180px;
   padding: .5rem;
   margin: .5rem;
-  border-radius: 15px; }
-  Section .reformas p .contactanos:hover, Section .nosotros p .contactanos:hover {
+  border-radius: 15px;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  list-style: none; }
+  Section .reformas p .contactanos:hover, .card .card-body a:hover, Section .nosotros p .contactanos:hover {
     background-color: #0a0a7e;
     color: #83dbf1;
     font-weight: 100;
     transition: .3s;
     transform: scale(1, 1.2); }
 
-Section h1, .servicios {
+Section h1, .row .nuestrosServicios, .servicios {
   margin: 1rem;
   color: #ee7009;
   text-align: left;
@@ -48,7 +51,262 @@ Section h2 {
 .card .card-body .card-title {
   padding: 1rem;
   border: dotted 2px rgba(14, 55, 131, 0.404);
-  border-radius: 15px; }
+  border-radius: 15px;
+  color: aliceblue; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+Section .reformas {
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  border-top: solid 12px #2d04c0;
+  flex-direction: row;
+  align-items: flex-start; }
+  Section .reformas img {
+    max-width: 500px;
+    margin: 3rem; }
+    Section .reformas img:hover {
+      filter: opacity(0.8); }
+  Section .reformas p {
+    max-width: 450px; }
+    Section .reformas p span {
+      color: orangered;
+      font-size: 25px;
+      font-weight: 100; }
+    Section .reformas p .contactanos {
+      margin-top: 1rem;
+      background-color: #2d67d3;
+      color: white; }
+
+/* responsive designe media queries mobile last */
+/* mobile last - max-widht */
+@media (max-width: 768px) {
+  Section h1 {
+    text-align: center; }
+  Section h2 {
+    text-align: center; }
+  Section .reformas {
+    flex-direction: column;
+    height: 95vh; }
+  Section img {
+    max-width: 250px; } }
+
+.footer-content {
+  margin-top: 0; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.card:hover {
+  font-weight: 100;
+  transform: scale(1, 1.04);
+  transition: .3seg;
+  background-color: rgba(184, 179, 179, 0.842); }
+
+.card .card-body .card-title {
+  background-color: #0b51e5;
+  background-image: linear-gradient(49deg, #0b51e5 0%, #90ccf0 71%); }
+
+.card .card-body .imagenAlquiler {
+  width: 350px; }
+  .card .card-body .imagenAlquiler:hover {
+    filter: opacity(0.8); }
+
+.card .card-body a {
+  color: #fff;
+  background-color: #0b51e5;
+  background-image: linear-gradient(49deg, #0b51e5 0%, #90ccf0 71%);
+  text-decoration: none;
+  width: 200px; }
+
+.card .card-body .btn:hover {
+  transform: scale(1, 1.1);
+  transition: opacity 1;
+  transition: 3s; }
+  .card .card-body .btn:hover:focus {
+    background: rgba(2, 7, 24, 0.123);
+    color: #0597aa;
+    font-weight: 3px; }
+
+.card .card-body .card-text {
+  max-width: 1000px;
+  margin-top: 1rem; }
+  .card .card-body .card-text:hover {
+    filter: opacity(0.8); }
+  .card .card-body .card-text img {
+    width: 280px; }
+
+.card .card-body .lista {
+  list-style: none;
+  color: rgba(10, 48, 119, 0.719);
+  font-size: 16px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.navbar-brand .img {
+  width: 100px; }
+
+.navbar-nav .nav-item a {
+  color: black;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  .navbar-nav .nav-item a:focus {
+    color: orange; }
+
+/* carousel */
+.carousel-item {
+  height: 55vh;
+  font-size: 30px; }
+  .carousel-item:hover {
+    filter: blur(5px); }
+  .carousel-item .carousel-caption h5 {
+    font-size: 50px;
+    background-color: #2e54fa;
+    opacity: 0.4;
+    color: #fff; }
+  .carousel-item .carousel-caption h6 {
+    font-size: 50px;
+    color: rgba(24, 2, 2, 0.863);
+    background-color: #fff;
+    opacity: 0.4; }
+
+/* Cards con Servicios */
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto; }
+  .row .nuestrosServicios {
+    border: dotted #155efcbd;
+    border-radius: 2px;
+    text-align: center; }
+
+/* responsive designe media queries mobile last */
+/* mobile last - max-widht */
+@media (max-width: 768px) {
+  .carousel-inner {
+    overflow: auto; }
+    .carousel-inner .carousel-item {
+      height: 40vh;
+      font-size: 15px; }
+      .carousel-inner .carousel-item .carousel-caption h5 {
+        font-size: 1000px; }
+      .carousel-inner .carousel-item .carousel-caption h6 {
+        font-size: 1rem; } }
+
+* {
+  margin: 0;
+  padding: 0pc; }
+
+Section .nosotros {
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  border-top: solid 12px #2d04c0;
+  flex-direction: row;
+  align-items: flex-start; }
+  Section .nosotros img {
+    max-width: 400px;
+    margin: 3rem; }
+    Section .nosotros img:hover {
+      filter: opacity(0.8); }
+  Section .nosotros p {
+    max-width: 450px; }
+    Section .nosotros p span {
+      color: orangered;
+      font-size: 25px;
+      font-weight: 100; }
+    Section .nosotros p .contactanos {
+      margin-top: 1rem;
+      background-color: #2d67d3;
+      color: white;
+      text-decoration: none; }
+
+/* responsive designe media queries mobile last */
+/* mobile last - max-widht */
+@media (max-width: 768px) {
+  Section .nosotros {
+    flex-direction: column;
+    height: 130vh;
+    align-items: center; }
+  Section img {
+    width: 300px;
+    margin: 0;
+    padding: 0; }
+  Section p {
+    text-align: center; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/* DISEÑO FORMULARIO DE CONTACTO */
+.body {
+  background-color: #c6c6c6; }
+  .body .form {
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    max-width: 450px;
+    border-radius: 10px;
+    background-color: rgba(5, 7, 12, 0.7); }
+    .body .form h1 {
+      font-size: 2rem;
+      margin: 2rem;
+      color: coral; }
+    .body .form div {
+      display: flex;
+      flex-direction: column;
+      margin: 3rem; }
+      .body .form div input {
+        height: 2.5rem;
+        width: 350px;
+        border-radius: 15px;
+        background-color: #c6c6c6;
+        text-align: center;
+        margin-top: 1rem; }
+        .body .form div input:hover {
+          background-color: #111;
+          color: #fff; }
+      .body .form div .submit {
+        animation-name: cambioColor;
+        animation-duration: 10s;
+        animation-iteration-count: infinite; }
+
+/* Animaciones - keyframes */
+@keyframes cambioColor {
+  0% {
+    background-color: #0011ff; }
+  25% {
+    background-color: aquamarine; }
+  50% {
+    background-color: #5a7ef7; }
+  100% {
+    background-color: #2658e2; } }
+
+/* responsive designe media queries mobile last */
+/* mobile last - max-widht */
+@media (max-width: 768px) {
+  .carousel-item h5 {
+    font-size: 15px;
+    background-color: #2e54fa;
+    opacity: 0.4;
+    color: #fff; }
+  .carousel-inner {
+    overflow: auto; }
+  .carousel-item {
+    max-height: 40vh; }
+  .card {
+    margin: .3rem; } }
 
 * {
   margin: 0;
@@ -104,225 +362,3 @@ footer {
 
 /* responsive designe media queries mobile last */
 /* mobile last - max-widht */
-* {
-  margin: 0;
-  padding: 0; }
-
-Section .reformas {
-  height: 45vh;
-  display: flex;
-  flex-direction: column;
-  border-top: solid 12px #2d04c0;
-  flex-direction: row;
-  align-items: flex-start; }
-  Section .reformas img {
-    max-width: 500px;
-    margin: 3rem; }
-    Section .reformas img:hover {
-      filter: opacity(0.8); }
-  Section .reformas p {
-    max-width: 450px; }
-    Section .reformas p span {
-      color: orangered;
-      font-size: 25px;
-      font-weight: 100; }
-    Section .reformas p .contactanos {
-      margin-top: 1rem;
-      background-color: #2d67d3;
-      color: white; }
-
-/* responsive designe media queries mobile last */
-/* mobile last - max-widht */
-@media (max-width: 768px) {
-  Section .reformas {
-    flex-direction: column;
-    height: 130vh; }
-  Section img {
-    max-width: 250px; } }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-.card:hover {
-  font-weight: 100;
-  transform: scale(1, 1.04);
-  transition: .3seg;
-  background-color: rgba(184, 179, 179, 0.842); }
-
-.card .card-body a {
-  color: #fff;
-  background-color: #0b51e5;
-  background-image: linear-gradient(49deg, #0b51e5 0%, #90ccf0 71%); }
-
-.card .card-body .btn:hover {
-  transform: scale(1, 1.1);
-  transition: opacity 1;
-  transition: 3seg; }
-  .card .card-body .btn:hover:focus {
-    background: rgba(2, 7, 24, 0.123);
-    color: #0597aa;
-    font-weight: 3px; }
-
-.card .card-body .card-text {
-  max-width: 1000px;
-  margin-top: 1rem; }
-  .card .card-body .card-text:hover {
-    filter: opacity(0.8); }
-  .card .card-body .card-text img {
-    width: 280px; }
-
-.card .card-body .lista {
-  list-style: none;
-  color: rgba(10, 48, 119, 0.719);
-  font-size: 16px; }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-.navbar-brand .img {
-  width: 100px; }
-
-.navbar-nav .nav-item a {
-  color: black;
-  font-size: 1rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  .navbar-nav .nav-item a:focus {
-    color: orange; }
-
-/* carousel */
-.carousel-item {
-  height: 55vh;
-  font-size: 30px; }
-  .carousel-item:hover {
-    filter: blur(5px); }
-  .carousel-item .carousel-caption h5 {
-    font-size: 50px;
-    background-color: #2e54fa;
-    opacity: 0.4;
-    color: #fff; }
-  .carousel-item .carousel-caption h6 {
-    font-size: 50px;
-    color: rgba(24, 2, 2, 0.863);
-    background-color: #fff;
-    opacity: 0.4; }
-
-/* Cards con Servicios */
-.row .nuestrosServicios {
-  font-size: 3rem;
-  color: #080808;
-  background-color: #cadcf3;
-  text-align: center;
-  background-color: rgba 255, 0, 0, 0.4;
-  padding: 2rem; }
-
-/* responsive designe media queries mobile last */
-/* mobile last - max-widht */
-@media (max-width: 768px) {
-  .carousel-inner {
-    overflow: auto; }
-    .carousel-inner .carousel-item {
-      height: 40vh;
-      font-size: 15px; }
-      .carousel-inner .carousel-item .carousel-caption h5 {
-        font-size: 1000px; }
-      .carousel-inner .carousel-item .carousel-caption h6 {
-        font-size: 1rem; } }
-
-* {
-  margin: 0;
-  padding: 0pc; }
-
-Section .nosotros {
-  height: 45vh;
-  display: flex;
-  flex-direction: column;
-  border-top: solid 12px #2d04c0;
-  flex-direction: row;
-  align-items: flex-start; }
-  Section .nosotros img {
-    max-width: 400px;
-    margin: 3rem; }
-    Section .nosotros img:hover {
-      filter: opacity(0.8); }
-  Section .nosotros p {
-    max-width: 450px; }
-    Section .nosotros p span {
-      color: orangered;
-      font-size: 25px;
-      font-weight: 100; }
-    Section .nosotros p .contactanos {
-      margin-top: 1rem;
-      background-color: #2d67d3;
-      color: white;
-      text-decoration: none; }
-
-/* responsive designe media queries mobile last */
-/* mobile last - max-widht */
-@media (max-width: 768px) {
-  Section .nosotros {
-    flex-direction: column;
-    height: 130vh; }
-  Section img {
-    max-width: 250px; } }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-/* DISEÑO FORMULARIO DE CONTACTO */
-.form {
-  position: relative;
-  grid-area: form;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 50vh; }
-  .form h1 {
-    font-size: 2rem;
-    margin: 2rem; }
-  .form div {
-    display: flex;
-    flex-direction: column;
-    margin: 3rem; }
-    .form div input {
-      height: 2.5rem;
-      width: 350px;
-      border-radius: 15px;
-      background-color: #c6c6c6;
-      text-align: center;
-      margin-top: 1rem; }
-      .form div input:hover {
-        background-color: #111;
-        color: #fff; }
-    .form div .submit {
-      animation-name: cambioColor;
-      animation-duration: 10s;
-      animation-iteration-count: infinite; }
-
-/* Animaciones - keyframes */
-@keyframes cambioColor {
-  0% {
-    background-color: #0011ff; }
-  25% {
-    background-color: aquamarine; }
-  50% {
-    background-color: #5a7ef7; }
-  100% {
-    background-color: #2658e2; } }
-
-/* responsive designe media queries mobile last */
-/* mobile last - max-widht */
-@media (max-width: 768px) {
-  .carousel-item h5 {
-    font-size: 15px;
-    background-color: #2e54fa;
-    opacity: 0.4;
-    color: #fff; }
-  .carousel-inner {
-    overflow: auto; }
-  .carousel-item {
-    max-height: 40vh; }
-  .card {
-    margin: .3rem; } }

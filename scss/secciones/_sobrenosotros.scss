@@ -55,9 +55,16 @@ Section {
         .nosotros {
             flex-direction: column;
             height: 130vh;
+            align-items: center;   
         }
+
         img {
-            max-width: 250px;
+            width: 300px;
+            margin: 0;
+            padding: 0;
         }
-}
+        p  {
+            text-align: center;
+        }
+    }
 }

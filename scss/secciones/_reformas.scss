@@ -1,13 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 Section {
 
-    h1{
+    h1 {
         @extend %titulo;
     }
+
     h2 {
         @extend %titulo2;
     }
@@ -23,22 +24,26 @@ Section {
         img {
             max-width: 500px;
             margin: 3rem;
+
             &:hover {
                 filter: opacity(.8);
             }
         }
+
         p {
             max-width: 450px;
             @extend %estiloParrafo;
-            span{
+
+            span {
                 color: orangered;
                 font-size: 25px;
                 font-weight: 100;
             }
+
             .contactanos {
                 margin-top: 1rem;
                 @extend %button;
-                @include btn-contactanos(rgb(45, 103, 211), white)
+                @include btn-contactanos(rgb(45, 103, 211), white);
             }
         }
     }
@@ -48,10 +53,17 @@ Section {
 /* mobile last - max-widht */
 @media (max-width: 768px) {
     Section {
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
 
         .reformas {
             flex-direction: column;
-            height: 130vh;
+            height: 95vh;
 
         }
 
@@ -61,4 +73,6 @@ Section {
     }
 }
 
- 
+.footer-content {
+    margin-top: 0;
+}
