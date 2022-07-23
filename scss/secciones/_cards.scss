@@ -3,72 +3,124 @@
     padding: 0;
 
 }
-    .card {
-        @extend %card;
-       
-        &:hover {
-            font-weight: 100;
-            transform: scale(1, 1.04);
-            transition: .3seg;
-            background-color: rgba(184, 179, 179, 0.842)
+
+.card {
+    @extend %card;
+
+    &:hover {
+        font-weight: 100;
+        transform: scale(1, 1.04);
+        transition: .3seg;
+        background-color: rgba(184, 179, 179, 0.842)
+    }
+
+    .card-body {
+
+        .card-title {
+            @extend %card-title;
+            background-color: #0b51e5;
+            background-image: linear-gradient(49deg, #0b51e5 0%, #90ccf0 71%);
+
         }
 
-        .card-body {
+        .imagenAlquiler {
+            width: 350px;
 
-            .card-title {
-                @extend %card-title;
-                background-color: #0b51e5;
-                background-image: linear-gradient(49deg, #0b51e5 0%, #90ccf0 71%);
-                
+            &:hover {
+                filter: opacity(.8);
+            }
+        }
+
+        a {
+            color: #fff;
+            background-color: #0b51e5;
+            background-image: linear-gradient(49deg, #0b51e5 0%, #90ccf0 71%);
+            text-decoration: none;
+            @extend %button;
+            width: 200px;
+        }
+
+        .btn:hover {
+            transform: scale(1, 1.1);
+            transition: opacity 1;
+            transition: 3s;
+
+            &:focus {
+                background: rgba(2, 7, 24, 0.123);
+                color: rgb(5, 151, 170);
+                font-weight: 3px;
             }
 
-            .imagenAlquiler {
-                width: 350px;
-                &:hover {
-                    filter: opacity(.8);
+        }
+
+        .card-text {
+            max-width: 1000px;
+            margin-top: 1rem;
+
+
+            &:hover {
+                filter: opacity(.8);
+            }
+
+            img {
+                width: 280px;
+            }
+
+        }
+
+        .lista {
+            list-style: none;
+            @include lista(rgba(10, 48, 119, 0.719), 16px)
+        }
+    }
+}
+
+/* responsive designe media queries mobile last */
+/* mobile last - max-widht 768px*/
+
+@media (max-width: 768px) {
+
+    .container {
+        .row {
+            height: 75vh;
+
+            .col-12 col-md-6 col-xl-4 {
+
+                .card {
+                    margin-top: 1rem;
+
+                    .card-body {
+                        .card-title {
+                            img {
+                                max-width: 10px;
+                            }
+                        }
+                    }
+
                 }
-            }
-
-            a {
-                color: #fff;
-                background-color: #0b51e5;
-                background-image: linear-gradient(49deg, #0b51e5 0%, #90ccf0 71%);
-                text-decoration: none;
-                @extend %button;
-                width: 200px;
-            }
-
-            .btn:hover {
-                transform: scale(1, 1.1);
-                transition: opacity 1;
-                transition: 3s;
-
-                &:focus {
-                    background: rgba(2, 7, 24, 0.123);
-                    color: rgb(5, 151, 170);
-                    font-weight: 3px;
-                }
-
-            }
-
-            .card-text {
-                max-width: 1000px;
-                margin-top: 1rem;
-        
-
-                &:hover {
-                    filter: opacity(.8);
-                }
-
-                img {
-                    width: 280px;
-                }
-
-            }
-
-            .lista {
-                list-style: none;
-                @include lista(rgba(10, 48, 119, 0.719), 16px)
             }
         }
     }
+}
+
+// responsive designe media queries mobile last */
+/* mobile last - max-widht 375px*/
+
+@media (max-width: 375px) {
+
+                .card {
+                    margin-top: 1rem;
+                    .card-body {
+                        .card-title{
+                        }
+                        .card-text {
+                            img {
+                                max-width: 200px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+

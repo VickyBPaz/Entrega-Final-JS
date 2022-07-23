@@ -26,11 +26,12 @@
 }
 
 %titulo {
-    margin: 1rem;
     color: rgb(238, 112, 9);
     text-align: left;
     font-family: $Oswald;
     padding: 1rem;
+    border-radius: 2px;
+
 
 }
 %titulo2 {
@@ -43,11 +44,11 @@
 }
 
 %card {
-    margin: 10px;
     border-radius: 30px;
     border: 2px solid rgba(14, 55, 131, 0.404);
-    height: 450px;
-    width: 350px;
+    height: 420px;
+    width: 300px;
+
 }
 
 %card-title {

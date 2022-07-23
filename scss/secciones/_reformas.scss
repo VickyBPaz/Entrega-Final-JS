@@ -63,13 +63,15 @@ Section {
 
         .reformas {
             flex-direction: column;
-            height: 95vh;
+            height: 100vh;
+
+            img {
+                max-width: 250px;
+            }
 
         }
 
-        img {
-            max-width: 250px;
-        }
+
     }
 }
 

@@ -27,12 +27,12 @@ Section .reformas p .contactanos, .card .card-body a, Section .nosotros p .conta
     transition: .3s;
     transform: scale(1, 1.2); }
 
-Section h1, .row .nuestrosServicios, .servicios {
-  margin: 1rem;
+Section h1, section .nuestrosServicios, .servicios {
   color: #ee7009;
   text-align: left;
   font-family: "Oswald", sans-serif;
-  padding: 1rem; }
+  padding: 1rem;
+  border-radius: 2px; }
 
 Section h2 {
   margin: 1rem;
@@ -42,11 +42,10 @@ Section h2 {
   padding: 1rem; }
 
 .card {
-  margin: 10px;
   border-radius: 30px;
   border: 2px solid rgba(14, 55, 131, 0.404);
-  height: 450px;
-  width: 350px; }
+  height: 420px;
+  width: 300px; }
 
 .card .card-body .card-title {
   padding: 1rem;
@@ -90,9 +89,9 @@ Section .reformas {
     text-align: center; }
   Section .reformas {
     flex-direction: column;
-    height: 95vh; }
-  Section img {
-    max-width: 250px; } }
+    height: 100vh; }
+    Section .reformas img {
+      max-width: 250px; } }
 
 .footer-content {
   margin-top: 0; }
@@ -145,6 +144,23 @@ Section .reformas {
   color: rgba(10, 48, 119, 0.719);
   font-size: 16px; }
 
+/* responsive designe media queries mobile last */
+/* mobile last - max-widht 768px*/
+@media (max-width: 768px) {
+  .container .row {
+    height: 75vh; }
+    .container .row .col-12 col-md-6 col-xl-4 .card {
+      margin-top: 1rem; }
+      .container .row .col-12 col-md-6 col-xl-4 .card .card-body .card-title img {
+        max-width: 10px; } }
+
+/* mobile last - max-widht 375px*/
+@media (max-width: 375px) {
+  .card {
+    margin-top: 1rem; }
+    .card .card-body .card-text img {
+      max-width: 200px; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -160,44 +176,67 @@ Section .reformas {
     color: orange; }
 
 /* carousel */
-.carousel-item {
-  height: 55vh;
+.carousel-inner .carousel-item {
+  height: 70vh;
   font-size: 30px; }
-  .carousel-item:hover {
+  .carousel-inner .carousel-item:hover {
     filter: blur(5px); }
-  .carousel-item .carousel-caption h5 {
+  .carousel-inner .carousel-item .carousel-caption h5 {
     font-size: 50px;
     background-color: #2e54fa;
     opacity: 0.4;
     color: #fff; }
-  .carousel-item .carousel-caption h6 {
+  .carousel-inner .carousel-item .carousel-caption h6 {
     font-size: 50px;
     color: rgba(24, 2, 2, 0.863);
     background-color: #fff;
     opacity: 0.4; }
 
 /* Cards con Servicios */
-.row {
+section .nuestrosServicios .row {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   margin: 0 auto; }
-  .row .nuestrosServicios {
-    border: dotted #155efcbd;
-    border-radius: 2px;
-    text-align: center; }
 
 /* responsive designe media queries mobile last */
-/* mobile last - max-widht */
+/* mobile last - max-widht 768px*/
 @media (max-width: 768px) {
   .carousel-inner {
-    overflow: auto; }
-    .carousel-inner .carousel-item {
-      height: 40vh;
+    overflow: auto;
+    height: 50vh; }
+    .carousel-inner .carousel-item img {
+      height: 42vh; }
+    .carousel-inner .carousel-item .carousel-caption h5 {
+      font-size: 20px;
+      text-align: center; }
+    .carousel-inner .carousel-item .carousel-caption h6 {
       font-size: 15px; }
-      .carousel-inner .carousel-item .carousel-caption h5 {
-        font-size: 1000px; }
-      .carousel-inner .carousel-item .carousel-caption h6 {
-        font-size: 1rem; } }
+    .carousel-inner .carousel-item .carousel-caption p {
+      font-size: 15px; } }
+
+/* responsive designe media queries mobile last */
+/* mobile last - max-widht 375px*/
+@media (max-width: 375px) {
+  .carousel-inner {
+    overflow: auto;
+    height: 50vh; }
+    .carousel-inner .carousel-item img {
+      height: 42vh; }
+    .carousel-inner .carousel-item .carousel-caption h5 {
+      font-size: 20px;
+      width: 100%;
+      justify-content: center; }
+    .carousel-inner .carousel-item .carousel-caption h6 {
+      font-size: 15px; }
+    .carousel-inner .carousel-item .carousel-caption p {
+      font-size: 15px; } }
+
+section .nuestrosServicios {
+  text-align: center; }
+  section .nuestrosServicios .row {
+    justify-content: center;
+    margin: 0; }
 
 * {
   margin: 0;
@@ -227,19 +266,25 @@ Section .nosotros {
       color: white;
       text-decoration: none; }
 
-/* responsive designe media queries mobile last */
-/* mobile last - max-widht */
+@media (max-width: 768px) {
+  .container {
+    height: 800px; } }
+
 @media (max-width: 768px) {
   Section .nosotros {
     flex-direction: column;
     height: 130vh;
     align-items: center; }
   Section img {
-    width: 300px;
+    width: 1000px;
     margin: 0;
     padding: 0; }
   Section p {
     text-align: center; } }
+
+@media (max-width: 375px) {
+  .container {
+    height: 950px; } }
 
 * {
   margin: 0;

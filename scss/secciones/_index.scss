@@ -26,73 +26,114 @@
 
 /* carousel */
 
-.carousel-item {
-    height: 55vh;
-    font-size: 30px;
+.carousel-inner {
+    .carousel-item {
+        height: 70vh;
+        font-size: 30px;
 
-    &:hover {
-        filter: blur(5px);
-    }
-
-    .carousel-caption {
-        h5 {
-            font-size: 50px;
-            background-color: rgb(46, 84, 250);
-            opacity: 0.4;
-            color: #fff;
+        &:hover {
+            filter: blur(5px);
         }
 
-        h6 {
-            font-size: 50px;
-            color: rgba(24, 2, 2, 0.863);
-            background-color: #fff;
-            opacity: 0.4;
+        .carousel-caption {
+            h5 {
+                font-size: 50px;
+                background-color: rgb(46, 84, 250);
+                opacity: 0.4;
+                color: #fff;
+            }
+
+            h6 {
+                font-size: 50px;
+                color: rgba(24, 2, 2, 0.863);
+                background-color: #fff;
+                opacity: 0.4;
+            }
         }
     }
 }
-
 
 /* Cards con Servicios */
 
-.row {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-
+section {
     .nuestrosServicios {
         @extend %titulo;
-        border: dotted #155efcbd;
-        border-radius: 2px;
-        text-align: center;
+
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 0 auto;
+        }
 
     }
 }
 
+/* responsive designe media queries mobile last */
+/* mobile last - max-widht 768px*/
 
+@media (max-width: 768px) {
+    .carousel-inner {
+        overflow: auto;
+        height: 50vh;
 
-
-
-
-    /* responsive designe media queries mobile last */
-    /* mobile last - max-widht */
-
-    @media (max-width: 768px) {
-        .carousel-inner {
-            overflow: auto;
-
-            .carousel-item {
-                height: 40vh;
-                font-size: 15px;
-
-                .carousel-caption {
+        .carousel-item {
+            img {
+                height: 42vh;
+            }
+            .carousel-caption {
                     h5 {
-                        font-size: 1000px;
+                        font-size: 20px;
+                        text-align: center;
                     }
-
                     h6 {
-                        font-size: 1rem;
+                        font-size: 15px;
+                    }
+                    p {
+                        font-size: 15px;
                     }
                 }
             }
+        }
+    }
+
+    /* responsive designe media queries mobile last */
+/* mobile last - max-widht 375px*/
+
+@media (max-width: 375px) {
+    .carousel-inner {
+        overflow: auto;
+        height: 50vh;
+
+        .carousel-item {
+            img {
+                height: 42vh;
+            }
+            .carousel-caption {
+                    h5 {
+                        font-size: 20px;
+                        width: 100%;
+                        justify-content: center;
+                    }
+                    h6 {
+                        font-size: 15px;
+                    }
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+        .nuestrosServicios {
+            text-align: center;    
+            .row {
+                justify-content: center;
+                margin: 0;
+            }
+    
         }
     }

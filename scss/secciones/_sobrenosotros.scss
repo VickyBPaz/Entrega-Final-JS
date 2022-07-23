@@ -47,8 +47,16 @@ Section {
     }
 }
 
-/* responsive designe media queries mobile last */
-/* mobile last - max-widht */
+//Responsive designe mobile-last - max-widht 768px//
+
+@media (max-width: 768px) {
+    .container {
+        height: 800px;
+    }
+}
+
+
+//Responsive designe mobile-last - max-widht 768px//
 
 @media (max-width: 768px) {
     Section {
@@ -59,7 +67,7 @@ Section {
         }
 
         img {
-            width: 300px;
+            width: 1000px;
             margin: 0;
             padding: 0;
         }
@@ -67,4 +75,13 @@ Section {
             text-align: center;
         }
     }
+}
+
+//Responsive designe mobile-last - max-widht 375px - Dispositivos//
+
+@media (max-width: 375px) {
+    .container {
+        height: 950px;
+    }
+
 }
