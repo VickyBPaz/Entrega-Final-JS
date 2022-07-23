@@ -55,10 +55,8 @@
 
 /* Cards con Servicios */
 
-section {
     .nuestrosServicios {
         @extend %titulo;
-
 
         .row {
             display: flex;
@@ -68,12 +66,12 @@ section {
         }
 
     }
-}
 
 /* responsive designe media queries mobile last */
 /* mobile last - max-widht 768px*/
 
 @media (max-width: 768px) {
+
     .carousel-inner {
         overflow: auto;
         height: 50vh;
@@ -82,23 +80,26 @@ section {
             img {
                 height: 42vh;
             }
+
             .carousel-caption {
-                    h5 {
-                        font-size: 20px;
-                        text-align: center;
-                    }
-                    h6 {
-                        font-size: 15px;
-                    }
-                    p {
-                        font-size: 15px;
-                    }
+                h5 {
+                    font-size: 20px;
+                    text-align: center;
+                }
+
+                h6 {
+                    font-size: 15px;
+                }
+
+                p {
+                    font-size: 15px;
                 }
             }
         }
     }
+}
 
-    /* responsive designe media queries mobile last */
+/* responsive designe media queries mobile last */
 /* mobile last - max-widht 375px*/
 
 @media (max-width: 375px) {
@@ -110,30 +111,32 @@ section {
             img {
                 height: 42vh;
             }
+
             .carousel-caption {
-                    h5 {
-                        font-size: 20px;
-                        width: 100%;
-                        justify-content: center;
-                    }
-                    h6 {
-                        font-size: 15px;
-                    }
-                    p {
-                        font-size: 15px;
-                    }
+                h5 {
+                    font-size: 20px;
+                    width: 100%;
+                    justify-content: center;
+                }
+
+                h6 {
+                    font-size: 15px;
+                }
+
+                p {
+                    font-size: 15px;
                 }
             }
         }
     }
+}
 
-    section {
-        .nuestrosServicios {
-            text-align: center;    
-            .row {
-                justify-content: center;
-                margin: 0;
-            }
-    
+    .nuestrosServicios {
+        text-align: center;
+
+        .row {
+            justify-content: center;
+            margin: 0;
         }
+
     }

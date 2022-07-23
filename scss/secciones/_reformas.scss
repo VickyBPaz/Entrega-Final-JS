@@ -22,7 +22,7 @@ Section {
         align-items: flex-start;
 
         img {
-            max-width: 500px;
+            max-width: 600px;
             margin: 3rem;
 
             &:hover {
@@ -50,7 +50,7 @@ Section {
 }
 
 /* responsive designe media queries mobile last */
-/* mobile last - max-widht */
+/* mobile last - max-widht 768px*/
 @media (max-width: 768px) {
     Section {
         h1 {
@@ -62,19 +62,44 @@ Section {
         }
 
         .reformas {
+            margin-top: 1rem;
             flex-direction: column;
-            height: 100vh;
+            height: 90vh;
+            align-items: center;
 
             img {
-                max-width: 250px;
+                max-width: 600px;
             }
 
         }
 
-
     }
 }
 
-.footer-content {
-    margin-top: 0;
+/* responsive designe media queries mobile last */
+/* mobile last - max-widht 375px*/
+
+@media (max-width: 375px) {
+    Section {
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .reformas {
+            margin-top: 1rem;
+            flex-direction: column;
+            height: 85vh;
+            align-items: center;
+
+            img {
+                max-width: 300px;
+            }
+
+        }
+
+    }
 }

@@ -6,6 +6,7 @@
 
 .card {
     @extend %card;
+    height: 450px;
 
     &:hover {
         font-weight: 100;
@@ -63,14 +64,15 @@
             }
 
             img {
-                width: 280px;
+                width: 250px;
             }
 
         }
 
         .lista {
             list-style: none;
-            @include lista(rgba(10, 48, 119, 0.719), 16px)
+            @include lista(rgba(10, 48, 119, 0.719), 16px);
+            
         }
     }
 }
@@ -90,37 +92,48 @@
                     margin-top: 1rem;
 
                     .card-body {
-                        .card-title {
-                            img {
-                                max-width: 10px;
-                            }
-                        }
-                    }
+                        .card-title {}
 
+                        .card-text {
+                            img {
+                                width: 150px;
+                            }
+
+                        }
+
+                    }
                 }
             }
         }
     }
 }
 
+
 // responsive designe media queries mobile last */
 /* mobile last - max-widht 375px*/
 
 @media (max-width: 375px) {
 
-                .card {
-                    margin-top: 1rem;
-                    .card-body {
-                        .card-title{
-                        }
-                        .card-text {
-                            img {
-                                max-width: 200px;
-                        }
-                    }
+    .card {
+        margin-top: 1rem;
+        height: 400px;
 
+
+        .card-body {
+            .card-title {
+
+            }
+            .imagenAlquiler  {
+                 max-width: 200px;
+            }
+
+            .card-text {
+                img {
+                    max-width: 200px;
                 }
             }
+
         }
+    }
 
-
+}

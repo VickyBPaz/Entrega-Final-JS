@@ -27,7 +27,7 @@ Section .reformas p .contactanos, .card .card-body a, Section .nosotros p .conta
     transition: .3s;
     transform: scale(1, 1.2); }
 
-Section h1, section .nuestrosServicios, .servicios {
+Section h1, .nuestrosServicios, .servicios {
   color: #ee7009;
   text-align: left;
   font-family: "Oswald", sans-serif;
@@ -65,7 +65,7 @@ Section .reformas {
   flex-direction: row;
   align-items: flex-start; }
   Section .reformas img {
-    max-width: 500px;
+    max-width: 600px;
     margin: 3rem; }
     Section .reformas img:hover {
       filter: opacity(0.8); }
@@ -81,68 +81,78 @@ Section .reformas {
       color: white; }
 
 /* responsive designe media queries mobile last */
-/* mobile last - max-widht */
+/* mobile last - max-widht 768px*/
 @media (max-width: 768px) {
   Section h1 {
     text-align: center; }
   Section h2 {
     text-align: center; }
   Section .reformas {
+    margin-top: 1rem;
     flex-direction: column;
-    height: 100vh; }
+    height: 90vh;
+    align-items: center; }
     Section .reformas img {
-      max-width: 250px; } }
+      max-width: 600px; } }
 
-.footer-content {
-  margin-top: 0; }
+/* responsive designe media queries mobile last */
+/* mobile last - max-widht 375px*/
+@media (max-width: 375px) {
+  Section h1 {
+    text-align: center; }
+  Section h2 {
+    text-align: center; }
+  Section .reformas {
+    margin-top: 1rem;
+    flex-direction: column;
+    height: 85vh;
+    align-items: center; }
+    Section .reformas img {
+      max-width: 300px; } }
 
 * {
   margin: 0;
   padding: 0; }
 
-.card:hover {
-  font-weight: 100;
-  transform: scale(1, 1.04);
-  transition: .3seg;
-  background-color: rgba(184, 179, 179, 0.842); }
-
-.card .card-body .card-title {
-  background-color: #0b51e5;
-  background-image: linear-gradient(49deg, #0b51e5 0%, #90ccf0 71%); }
-
-.card .card-body .imagenAlquiler {
-  width: 350px; }
-  .card .card-body .imagenAlquiler:hover {
-    filter: opacity(0.8); }
-
-.card .card-body a {
-  color: #fff;
-  background-color: #0b51e5;
-  background-image: linear-gradient(49deg, #0b51e5 0%, #90ccf0 71%);
-  text-decoration: none;
-  width: 200px; }
-
-.card .card-body .btn:hover {
-  transform: scale(1, 1.1);
-  transition: opacity 1;
-  transition: 3s; }
-  .card .card-body .btn:hover:focus {
-    background: rgba(2, 7, 24, 0.123);
-    color: #0597aa;
-    font-weight: 3px; }
-
-.card .card-body .card-text {
-  max-width: 1000px;
-  margin-top: 1rem; }
-  .card .card-body .card-text:hover {
-    filter: opacity(0.8); }
-  .card .card-body .card-text img {
-    width: 280px; }
-
-.card .card-body .lista {
-  list-style: none;
-  color: rgba(10, 48, 119, 0.719);
-  font-size: 16px; }
+.card {
+  height: 450px; }
+  .card:hover {
+    font-weight: 100;
+    transform: scale(1, 1.04);
+    transition: .3seg;
+    background-color: rgba(184, 179, 179, 0.842); }
+  .card .card-body .card-title {
+    background-color: #0b51e5;
+    background-image: linear-gradient(49deg, #0b51e5 0%, #90ccf0 71%); }
+  .card .card-body .imagenAlquiler {
+    width: 350px; }
+    .card .card-body .imagenAlquiler:hover {
+      filter: opacity(0.8); }
+  .card .card-body a {
+    color: #fff;
+    background-color: #0b51e5;
+    background-image: linear-gradient(49deg, #0b51e5 0%, #90ccf0 71%);
+    text-decoration: none;
+    width: 200px; }
+  .card .card-body .btn:hover {
+    transform: scale(1, 1.1);
+    transition: opacity 1;
+    transition: 3s; }
+    .card .card-body .btn:hover:focus {
+      background: rgba(2, 7, 24, 0.123);
+      color: #0597aa;
+      font-weight: 3px; }
+  .card .card-body .card-text {
+    max-width: 1000px;
+    margin-top: 1rem; }
+    .card .card-body .card-text:hover {
+      filter: opacity(0.8); }
+    .card .card-body .card-text img {
+      width: 250px; }
+  .card .card-body .lista {
+    list-style: none;
+    color: rgba(10, 48, 119, 0.719);
+    font-size: 16px; }
 
 /* responsive designe media queries mobile last */
 /* mobile last - max-widht 768px*/
@@ -151,13 +161,16 @@ Section .reformas {
     height: 75vh; }
     .container .row .col-12 col-md-6 col-xl-4 .card {
       margin-top: 1rem; }
-      .container .row .col-12 col-md-6 col-xl-4 .card .card-body .card-title img {
-        max-width: 10px; } }
+      .container .row .col-12 col-md-6 col-xl-4 .card .card-body .card-text img {
+        width: 150px; } }
 
 /* mobile last - max-widht 375px*/
 @media (max-width: 375px) {
   .card {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    height: 400px; }
+    .card .card-body .imagenAlquiler {
+      max-width: 200px; }
     .card .card-body .card-text img {
       max-width: 200px; } }
 
@@ -193,7 +206,7 @@ Section .reformas {
     opacity: 0.4; }
 
 /* Cards con Servicios */
-section .nuestrosServicios .row {
+.nuestrosServicios .row {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -232,9 +245,9 @@ section .nuestrosServicios .row {
     .carousel-inner .carousel-item .carousel-caption p {
       font-size: 15px; } }
 
-section .nuestrosServicios {
+.nuestrosServicios {
   text-align: center; }
-  section .nuestrosServicios .row {
+  .nuestrosServicios .row {
     justify-content: center;
     margin: 0; }
 
