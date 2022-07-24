@@ -71,7 +71,10 @@
 
         .lista {
             list-style: none;
-            @include lista(rgba(10, 48, 119, 0.719), 16px);
+            @include lista(rgba(9, 69, 173, 0.836), 17px);
+            text-align: center;
+            
+            
             
         }
     }

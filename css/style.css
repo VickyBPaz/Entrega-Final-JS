@@ -151,8 +151,9 @@ Section .reformas {
       width: 250px; }
   .card .card-body .lista {
     list-style: none;
-    color: rgba(10, 48, 119, 0.719);
-    font-size: 16px; }
+    color: rgba(9, 69, 173, 0.836);
+    font-size: 17px;
+    text-align: center; }
 
 /* responsive designe media queries mobile last */
 /* mobile last - max-widht 768px*/
@@ -201,7 +202,7 @@ Section .reformas {
     color: #fff; }
   .carousel-inner .carousel-item .carousel-caption h6 {
     font-size: 50px;
-    color: rgba(54, 54, 54, 0.9);
+    color: rgba(231, 222, 222, 0.9);
     background-color: rgba(77, 74, 74, 0.623); }
 
 /* Cards con Servicios */
