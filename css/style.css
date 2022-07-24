@@ -201,9 +201,8 @@ Section .reformas {
     color: #fff; }
   .carousel-inner .carousel-item .carousel-caption h6 {
     font-size: 50px;
-    color: rgba(24, 2, 2, 0.863);
-    background-color: #fff;
-    opacity: 0.4; }
+    color: rgba(54, 54, 54, 0.9);
+    background-color: rgba(77, 74, 74, 0.623); }
 
 /* Cards con Servicios */
 .nuestrosServicios .row {
