@@ -9,7 +9,7 @@ Section .reformas p, Section .nosotros p {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
   color: #1a1919;
-  margin: 2rem;
+  margin: 1rem;
   padding: 1rem; }
 
 Section .reformas p .contactanos, .card .card-body a, Section .nosotros p .contactanos {
@@ -76,7 +76,7 @@ Section .reformas {
       font-size: 25px;
       font-weight: 100; }
     Section .reformas p .contactanos {
-      margin-top: 1rem;
+      margin-top: 0.5rem;
       background-color: #2d67d3;
       color: white; }
 
@@ -93,7 +93,7 @@ Section .reformas {
     height: 90vh;
     align-items: center; }
     Section .reformas img {
-      max-width: 600px; } }
+      max-width: 500px; } }
 
 /* responsive designe media queries mobile last */
 /* mobile last - max-widht 375px*/
@@ -105,7 +105,7 @@ Section .reformas {
   Section .reformas {
     margin-top: 1rem;
     flex-direction: column;
-    height: 93vh;
+    height: 98vh;
     align-items: center; }
     Section .reformas img {
       max-width: 300px; } }
@@ -376,7 +376,7 @@ footer {
   font-family: "Open Sans";
   margin-top: 3rem; }
   footer .footer-content {
-    margin-top: 4rem;
+    margin-top: 3rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;

@@ -41,7 +41,7 @@ Section {
             }
 
             .contactanos {
-                margin-top: 1rem;
+                margin-top: 0.5rem;
                 @extend %button;
                 @include btn-contactanos(rgb(45, 103, 211), white);
             }
@@ -68,7 +68,7 @@ Section {
             align-items: center;
 
             img {
-                max-width: 600px;
+                max-width: 500px;
             }
 
         }
@@ -92,7 +92,7 @@ Section {
         .reformas {
             margin-top: 1rem;
             flex-direction: column;
-            height: 93vh;
+            height: 98vh;
             align-items: center;
 
             img {
