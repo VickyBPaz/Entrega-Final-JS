@@ -237,11 +237,11 @@ Section .reformas {
     .carousel-inner .carousel-item img {
       height: 42vh; }
     .carousel-inner .carousel-item .carousel-caption h5 {
-      font-size: 20px;
+      font-size: 25px;
       width: 100%;
       justify-content: center; }
     .carousel-inner .carousel-item .carousel-caption h6 {
-      font-size: 15px; }
+      font-size: 25px; }
     .carousel-inner .carousel-item .carousel-caption p {
       font-size: 15px; } }
 
