@@ -29,6 +29,7 @@ function calcularTotal(precioServicio) {
 	return gastoTotal + precioServicio;
 }
 
+
 function mostrarTotal() {
 	console.log('Cantidad de servicios: ' + contador);
 	console.log('El precio total es $' + gastoTotal);
