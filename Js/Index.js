@@ -60,14 +60,14 @@ let servicio6 = new Servicio("6", "http", "Gasista", 6500);
 
 // // Array con objetos
 
-// const serviciosDrHouse = [
-//  servicio1,
-//  servicio2,
-//  servicio3,
-//  servicio4,
-//  servicio5,
-//  servicio6,
-// ];
+const serviciosDrHouse = [
+ servicio1,
+ servicio2,
+ servicio3,
+ servicio4,
+ servicio5,
+ servicio6,
+];
 
 
 // console.log(serviciosDrHouse[0]);
@@ -133,4 +133,26 @@ let servicio6 = new Servicio("6", "http", "Gasista", 6500);
 // //agregar elementos al principio del arreglo
 // serviciosDrHouse.unshift({id: 7, nombre: "Sanitarios", precio: 6500}); 
 // console.log(serviciosDrHouse);
+
+// EVENTOS
+
+    let contenedor = document.getElementById("contenedor");
+    let formulario = document.getElementById("formulario");   
+
+    formulario.addEventListener("submit", (e) => {
+        e.preventDefault();
+        contenedor.innerHTML = "";
+        let inputs = e.target.children;
+        let servicio = serviciosDrHouse.find(item => item.nombre === inputs[0].value);
+
+        let div = document.createDocument("div");
+        div.innerHTML = `
+        <h2>id= ${servicio.id}</h2>
+        <p>Nombre: ${item.nombre}</p>
+        <b>precio: ${item.precio}</b>
+        `;
+
+        contenedor.append(div);
+    });
+
 
