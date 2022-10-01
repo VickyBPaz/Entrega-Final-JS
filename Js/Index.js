@@ -136,17 +136,18 @@ const serviciosDrHouse = [
 
 
 
-// INCORPORAR EVENTOS A MI PROYECTO
+// INCORPORAR EVENTOS A MI PROYECTO - evento click en el index.html CARDS con servicios
 
 // creo la funcion respuesta
+let = contador = 0
 
 function respuesta(nombre){
     console.log("click", nombre);
-}
+    contador = contador + 1;
+}   
 
 let electricidad = document.getElementById("electricidad");
 electricidad.addEventListener("click", () => respuesta("electricidad"));
-
 
 let plomeria = document.getElementById("plomeria");
 plomeria.addEventListener("click", () => respuesta("plomeria"));
@@ -154,7 +155,7 @@ plomeria.addEventListener("click", () => respuesta("plomeria"));
 let aire = document.getElementById("aire acondicionado");
 aire.addEventListener("click", () => respuesta("aire acondicionado"));
 
-// CONTAR CLICKS CADA VEZ QUE SE DIRIGEN A LAS REDES
+// CONTAR CLICKS CADA VEZ QUE SE DIRIGEN A LAS REDES - index html footer
 
 let face = document.getElementById("facebook");
 face.addEventListener("click", () => respuesta ("facebook"));
