@@ -41,33 +41,33 @@
 // mostrarTotal();
 
 // funcion contructora - creadora de objetos:
-class Servicio{
-    constructor(id, imagen, nombre,precio){
-	this.id = id;
-    this.imagen = imagen;
-    this.nombre = nombre;
-    this.precio = precio;
-    }
-}
-let servicio1 = new Servicio("1", "http", "Aire acondicionado", 9500);
-let servicio2 = new Servicio("2", "http", "Electricidad", 6500);
-let servicio3 = new Servicio("3", "http", "Plomeria", 4500);
-let servicio4 = new Servicio("4", "http", "Pintura", 6500);
-let servicio5 = new Servicio("5", "http", "Pequeños arreglos", 3500);
-let servicio6 = new Servicio("6", "http", "Gasista", 6500);
+// class Servicio{
+//     constructor(id, imagen, nombre,precio){
+// 	this.id = id;
+//     this.imagen = imagen;
+//     this.nombre = nombre;
+//     this.precio = precio;
+//     }
+// }
+// let servicio1 = new Servicio("1", "http", "Aire acondicionado", 9500);
+// let servicio2 = new Servicio("2", "http", "Electricidad", 6500);
+// let servicio3 = new Servicio("3", "http", "Plomeria", 4500);
+// let servicio4 = new Servicio("4", "http", "Pintura", 6500);
+// let servicio5 = new Servicio("5", "http", "Pequeños arreglos", 3500);
+// let servicio6 = new Servicio("6", "http", "Gasista", 6500);
 
-// // console.log(servicio1);
+// // // console.log(servicio1);
 
-// // Array con objetos
+// // // Array con objetos
 
-const serviciosDrHouse = [
- servicio1,
- servicio2,
- servicio3,
- servicio4,
- servicio5,
- servicio6,
-];
+// const serviciosDrHouse = [
+//  servicio1,
+//  servicio2,
+//  servicio3,
+//  servicio4,
+//  servicio5,
+//  servicio6,
+// ];
 
 
 // console.log(serviciosDrHouse[0]);
@@ -139,34 +139,47 @@ const serviciosDrHouse = [
 // INCORPORAR EVENTOS A MI PROYECTO - evento click en el index.html CARDS con servicios
 
 // creo la funcion respuesta
-let = contador = 0
 
-function respuesta(nombre){
-    console.log("click", nombre);
-    contador = contador + 1;
-}   
+// let contador = 0;
 
-let electricidad = document.getElementById("electricidad");
-electricidad.addEventListener("click", () => respuesta("electricidad"));
+// function respuesta(nombre){
+//     console.log("click", nombre);
+//     contador = contador + 1;
+    
+// }
 
-let plomeria = document.getElementById("plomeria");
-plomeria.addEventListener("click", () => respuesta("plomeria"));
+// let electricidad = document.getElementById("electricidad");
+// electricidad.addEventListener("click", () => respuesta("electricidad"));
 
-let aire = document.getElementById("aire acondicionado");
-aire.addEventListener("click", () => respuesta("aire acondicionado"));
 
-// CONTAR CLICKS CADA VEZ QUE SE DIRIGEN A LAS REDES - index html footer
+// let plomeria = document.getElementById("plomeria");
+// plomeria.addEventListener("click", () => respuesta("plomeria"));
 
-let face = document.getElementById("facebook");
-face.addEventListener("click", () => respuesta ("facebook"));
+// let aire = document.getElementById("aire-acondicionado");
+// aire.addEventListener("click", () => respuesta("aire acondicionado"));
 
-let insta = document.getElementById("instagram");
-insta.addEventListener("click", () => respuesta ("instagram"));
+// // CONTAR CLICKS CADA VEZ QUE SE DIRIGEN A LAS REDES - index html footer
 
-let twitter = document.getElementById("twitter");
-twitter.addEventListener("click", () => respuesta ("twitter"));
+// let face = document.getElementById("facebook");
+// face.addEventListener("click", () => respuesta ("facebook"));
 
-let youtube = document.getElementById("youtube");
-youtube.addEventListener("click", () => respuesta ("youtube"));
+// let insta = document.getElementById("instagram");
+// insta.addEventListener("click", () => respuesta ("instagram"));
 
- 
+// let twitter = document.getElementById("twitter");
+// twitter.addEventListener("click", () => respuesta ("twitter"));
+
+// let youtube = document.getElementById("youtube");
+// youtube.addEventListener("click", () => respuesta ("youtube"));
+
+// // EVENTOS AL HTML CONTACTO - FORMULARIO 
+
+// let input = document.getElementById("nombre");
+// // input.addEventListener("click", () => respuesta("click"));
+
+let formulario = getElementById("formulario");
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let inputs = e.target.children;
+    console.log(inputs);
+});
