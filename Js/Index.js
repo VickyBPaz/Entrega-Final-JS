@@ -134,25 +134,38 @@ const serviciosDrHouse = [
 // serviciosDrHouse.unshift({id: 7, nombre: "Sanitarios", precio: 6500}); 
 // console.log(serviciosDrHouse);
 
-// EVENTOS
-
-    let contenedor = document.getElementById("contenedor");
-    let formulario = document.getElementById("formulario");   
-
-    formulario.addEventListener("submit", (e) => {
-        e.preventDefault();
-        contenedor.innerHTML = "";
-        let inputs = e.target.children;
-        let servicio = serviciosDrHouse.find(item => item.nombre === inputs[0].value);
-
-        let div = document.createDocument("div");
-        div.innerHTML = `
-        <h2>id= ${servicio.id}</h2>
-        <p>Nombre: ${item.nombre}</p>
-        <b>precio: ${item.precio}</b>
-        `;
-
-        contenedor.append(div);
-    });
 
 
+// INCORPORAR EVENTOS A MI PROYECTO
+
+// creo la funcion respuesta
+
+function respuesta(nombre){
+    console.log("click", nombre);
+}
+
+let electricidad = document.getElementById("electricidad");
+electricidad.addEventListener("click", () => respuesta("electricidad"));
+
+
+let plomeria = document.getElementById("plomeria");
+plomeria.addEventListener("click", () => respuesta("plomeria"));
+
+let aire = document.getElementById("aire acondicionado");
+aire.addEventListener("click", () => respuesta("aire acondicionado"));
+
+// CONTAR CLICKS CADA VEZ QUE SE DIRIGEN A LAS REDES
+
+let face = document.getElementById("facebook");
+face.addEventListener("click", () => respuesta ("facebook"));
+
+let insta = document.getElementById("instagram");
+insta.addEventListener("click", () => respuesta ("instagram"));
+
+let twitter = document.getElementById("twitter");
+twitter.addEventListener("click", () => respuesta ("twitter"));
+
+let youtube = document.getElementById("youtube");
+youtube.addEventListener("click", () => respuesta ("youtube"));
+
+ 
