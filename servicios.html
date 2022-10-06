@@ -62,8 +62,12 @@
         </nav>
     </header>
     <main>
+        <div id=" cualquiera"></div>
         <div class="container-fluid">
-        <h1 class="servicios">ESTOS SON NUESTROS SERVICIOS</h1>
+            <div class="buscador">
+                 <h1 class="servicios">ESTOS SON NUESTROS SERVICIOS</h1>
+                 <input type="text" placeholder="BUSCADOR">
+            </div>
         <div class="row mt-5">
             <div class="col-12 col-md-6 col-xl-4">
                 <!-- CARD ELECTRICIDAD -->
@@ -79,6 +83,7 @@
                             <li>Detecion de fallas</li>
                             <li>Tableros</li>
                         </ul>
+                        <button id="botonElec">Seleccionar</button>
                     </div>
                 </div>
             </div>
@@ -94,6 +99,7 @@
                             <li>Desagues de cocinas y baños</li>
                             <li>Plomeria en general</li>
                         </ul>
+                        <button id="botonPlom">Seleccionar</button>
                     </div>
                 </div>
             </div>
@@ -110,6 +116,7 @@
                             <li>Limpìeza de Filtros</li>
                             <li>Reparacion y/o cambio de plaqueta</li>
                         </ul>
+                        <button id="botonAa">Seleccionar</button>
                     </div>
                 </div>
             </div>
@@ -126,11 +133,12 @@
                             <li>Reparacion de persianas</li>
                             <li>Colocacion de Soporte TV</li>
                         </ul>
+                        <button id="botonPa">Seleccionar</button>
                     </div>
                 </div>
             </div>
+                 <!-- CARD PINTURA -->
             <div class="col-12 col-md-6 col-xl-4">
-                <!-- CARD PINTURA -->
                 <div class="card mx-auto mt-3">
                     <div class="card-body text-center">
                         <h5 class="card-title text-center text-black animate__animated animate__flipInY">Pintura</h5>
@@ -141,10 +149,11 @@
                             <li>Paredes interiores</li>
                             <li>Piletas</li>
                         </ul>
+                        <button id="botonPint>Seleccionar</button>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-4">
+            <div class="col-12 col-md-6 col-xl-4" id="cards">
                 <!-- CARD GAS -->
                 <div class="card mx-auto mt-3">
                     <div class="card-body text-center">
@@ -156,6 +165,7 @@
                             <li>Revision de estufas</li>
                             <li>Revision instalaciones de gas</li>
                         </ul>
+                        <button id="botonGas">Seleccionar</button>
                     </div>
                 </div>
             </div>
@@ -168,10 +178,10 @@
             <h3 class="h3Footer">Dr. House - Servicios de mantenimiento </h3>
             <p>Puede contactarse con nosotros a traves de nuestras redes sociales</p>
             <ul class="redes">
-                <li><a href="#"><i class="fa fa-facebook" id="facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram" id="instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube" id="youtube"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" id="twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
             </ul>
         </div>
         <div class="fondo-footer">
@@ -179,10 +189,11 @@
 
         </div>
     </footer>
+    <script src="./Js/Index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-        <script src="/Js/Index.js"></script>
+        
 </body>
 
 </html>

@@ -67,4 +67,12 @@ footer {
 }
 
 /* responsive designe media queries mobile last */
-/* mobile last - max-widht */
+/* mobile last - max-widht */   
+
+@media (max-width: 768px) {
+footer {
+    .footer-content{
+    margin-top: 31rem;
+    }
+  }
+}
