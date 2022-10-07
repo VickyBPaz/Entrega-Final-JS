@@ -83,8 +83,8 @@ const comprarServicio = (item) => {
 }
 
 // TRAJE DEL HTML UN BOTON CREADO PARA EL CARRITO
-let botonCarrito = document.getElementById("carrito")
-botonCarrito.addEventListener("click" , () => console.log(carrito))
+// let botonCarrito = document.getElementById("carrito")
+// botonCarrito.addEventListener("click" , () => console.log(carrito))
 
 
 //BUSCADOR - en el html servicios
@@ -100,3 +100,23 @@ inputAfter.value = ""
 }
 
 botonInput.addEventListener("click", ()=> buscarServicio(inputAfter.value))
+
+// FORMULARIO
+let emails = []
+const formu = document.getElementById("formulario")
+
+
+const guardarEmail = (e) => {
+  e.preventDefault()
+  let nombre = e.target.children[0].value;
+  let apellido = e.target.children[1].value;
+  let mail = e.target.children[2].value
+  
+  emails.push({
+    nombre: nombre,
+    apellido: apellido, 
+    mail: mail
+  })
+console.log(emails);
+}
+formulario.addEventListener("submit", (e) => guardarEmail(e))

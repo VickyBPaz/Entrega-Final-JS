@@ -27,7 +27,7 @@ Section .reformas p .contactanos, .card .card-body a, Section .nosotros p .conta
     transition: .3s;
     transform: scale(1, 1.2); }
 
-Section h1, .nuestrosServicios, .servicios {
+Section h1, .nuestrosServicios, .container-fluid .buscador .servicios {
   color: #ee7009;
   text-align: left;
   font-family: "Oswald", sans-serif;
@@ -366,6 +366,10 @@ Section .nosotros {
   .card {
     margin: .3rem; } }
 
+.container-fluid .buscador {
+  display: flex;
+  flex-direction: row; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -420,3 +424,6 @@ footer {
 
 /* responsive designe media queries mobile last */
 /* mobile last - max-widht */
+@media (max-width: 768px) {
+  footer .footer-content {
+    margin-top: 31rem; } }
