@@ -107,7 +107,8 @@ const formu = document.getElementById("formulario")
 
 
 const guardarEmail = (e) => {
-  e.preventDefault()
+e.preventDefault()
+
   let nombre = e.target.children[0].value;
   let apellido = e.target.children[1].value;
   let mail = e.target.children[2].value
