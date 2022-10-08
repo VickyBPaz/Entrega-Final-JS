@@ -375,7 +375,20 @@ Section .nosotros {
 .container-fluid .buscador .inputB {
   border-radius: 5px;
   border-color: #0099ff;
-  background-color: #e9e1e1; }
+  background-color: #e9e1e1;
+  width: 40vw; }
+
+.container-fluid .buscador #botonInput {
+  border-radius: 5px;
+  border-color: #0099ff;
+  width: 20vw;
+  background-color: #5779e7; }
+  .container-fluid .buscador #botonInput:hover {
+    background-color: #0a0a7e;
+    color: #83dbf1;
+    font-weight: 100;
+    transition: .3s;
+    transform: scale(1, 1.2); }
 
 * {
   margin: 0;
