@@ -71,7 +71,8 @@
 
         .lista {
             list-style: none;
-            @include lista(rgba(9, 69, 173, 0.836), 17px);
+            margin-top: .5rem;
+            @include lista(rgba(9, 69, 173, 0.836), 14px);
             text-align: center;
             
             

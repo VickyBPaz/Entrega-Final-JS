@@ -151,8 +151,9 @@ Section .reformas {
       width: 250px; }
   .card .card-body .lista {
     list-style: none;
+    margin-top: .5rem;
     color: rgba(9, 69, 173, 0.836);
-    font-size: 17px;
+    font-size: 14px;
     text-align: center; }
 
 /* responsive designe media queries mobile last */
@@ -389,6 +390,12 @@ Section .nosotros {
     font-weight: 100;
     transition: .3s;
     transform: scale(1, 1.2); }
+
+#carrito {
+  margin-top: 3rem;
+  border-radius: 5px;
+  border-color: #0099ff;
+  width: 10vw; }
 
 * {
   margin: 0;
