@@ -30,6 +30,7 @@ new Servicio("7", "https://www.lujanhoy.com.ar/wp-content/uploads/2020/04/Gasist
 // console.log(recuperarServicio);
 
 
+// AGREGUE LIBRERIA SWEET
 // CAMBIAR PRECIO DE LOS SERVICIOS a traves del localstorage
 // const cambiarPrecio = (nombre,precio) => {
 //   let servicios = JSON.parse(localStorage.getItem("servicios"));
@@ -50,7 +51,8 @@ new Servicio("7", "https://www.lujanhoy.com.ar/wp-content/uploads/2020/04/Gasist
 // cambiarPrecio(nombre,precio);
 
 
-// ELIMINAR ITEM DEL CARRITO
+// AGREGUE LIBRERIA SWEET
+// ELIMINAR SERVICIOS DEL CARRITO
 
 const eliminar = (nombre) => {
   let servicios = JSON.parse(localStorage.getItem("servicios"));
@@ -117,6 +119,7 @@ const comprarServicio = (item) => {
 
 
 // // TRAJE DEL HTML UN BOTON CREADO PARA EL CARRITO
+
 // AGREGUE LIBRERIA SWEET AL BOTON DEL CARRITO
 // let botonCarrito = document.getElementById("carrito")
 // botonCarrito.addEventListener("click" , () => 
@@ -142,20 +145,20 @@ inputAfter.value = ""
 botonInput.addEventListener("click", ()=> buscarServicio(inputAfter.value))
 
 // // FORMULARIO
-const formulario = document.getElementById("formulario")
-let emails = []
+// const formulario = document.getElementById("formulario")
+// let emails = []
 
-const guardarEmail = (e) => {
-e.preventDefault()
-console.log(e.target.children);
-// let nombre = e.target.children[0].value;
-//   let apellido = e.target.children[1].value;
-//   let mail = e.target.children[2].value 
-//   emails.push({
-//     nombre: nombre,
-//     apellido: apellido, 
-//     mail: mail
-//   })
-// console.log(emails);  
-}
-formulario.addEventListener("submit", (e) => guardarEmail(e))
+// const guardarEmail = (e) => {
+// e.preventDefault()
+// console.log(e.target.children);
+// // let nombre = e.target.children[0].value;
+// //   let apellido = e.target.children[1].value;
+// //   let mail = e.target.children[2].value 
+// //   emails.push({
+// //     nombre: nombre,
+// //     apellido: apellido, 
+// //     mail: mail
+// //   })
+// // console.log(emails);  
+// }
+// formulario.addEventListener("submit", (e) => guardarEmail(e))
