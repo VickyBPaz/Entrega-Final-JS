@@ -54,23 +54,24 @@ new Servicio("7", "https://www.lujanhoy.com.ar/wp-content/uploads/2020/04/Gasist
 // AGREGUE LIBRERIA SWEET
 // ELIMINAR SERVICIOS DEL CARRITO
 
-const eliminar = (nombre) => {
-  let servicios = JSON.parse(localStorage.getItem("servicios"));
-  servicios = servicios.filter(item => 
-  item.nombre != nombre);
-  localStorage.setItem("servicios",JSON.stringify(servicios));
-  Swal.fire(
-    'Buen trabajo!',
-    'El servicio se ha eliminado correctamente!',
-    'success'
-  )  
-};
+// const eliminar = (nombre) => {
+//   let servicios = JSON.parse(localStorage.getItem("servicios"));
+//   servicios = servicios.filter(item => 
+//   item.nombre != nombre);
+//   localStorage.setItem("servicios",JSON.stringify(servicios));
+//   Swal.fire(
+//     'Buen trabajo!',
+//     'El servicio se ha eliminado correctamente!',
+//     'success'
+//   )  
+// };
 
-let nombre = prompt("Ingrese el nombre del Servicio");
-eliminar(nombre);
+// let nombre = prompt("Ingrese el nombre del Servicio");
+// eliminar(nombre);
 
 // // INCORPORAR EVENTOS A MI PROYECTO - evento click en servicios.html CARDS con servicios
 const div = document.getElementById("cards")
+console.log(cards);
 
 
 // // ELIMINE LAS CARDS que originalmente tenia en servicios.html y , a traves del forEach, plasme un patron de una card ara renderizar los servicios a traves de JS.
@@ -79,8 +80,8 @@ const div = document.getElementById("cards")
 
 let carrito = []
 serviciosDrHouse.forEach(item => {
-  let servicioRenderizado = document.createElement("div")
-  servicioRenderizado.innerHTML = `
+  let div = document.createElement("div")
+  div.innerHTML = `
   <div class="col-12 col-md-6 col-xl-4">
     <div class="card mx-auto mt-3">
       <div class="card-body text-center">
@@ -96,7 +97,7 @@ serviciosDrHouse.forEach(item => {
      </div>
   </div>
 ` 
-div.append(servicioRenderizado)
+cards.append(div)
 const boton = document.getElementById(item.id) 
 boton.addEventListener("click", () => comprarServicio(item))
 })
@@ -144,21 +145,3 @@ inputAfter.value = ""
 
 botonInput.addEventListener("click", ()=> buscarServicio(inputAfter.value))
 
-// // FORMULARIO
-// const formulario = document.getElementById("formulario")
-// let emails = []
-
-// const guardarEmail = (e) => {
-// e.preventDefault()
-// console.log(e.target.children);
-// // let nombre = e.target.children[0].value;
-// //   let apellido = e.target.children[1].value;
-// //   let mail = e.target.children[2].value 
-// //   emails.push({
-// //     nombre: nombre,
-// //     apellido: apellido, 
-// //     mail: mail
-// //   })
-// // console.log(emails);  
-// }
-// formulario.addEventListener("submit", (e) => guardarEmail(e))
