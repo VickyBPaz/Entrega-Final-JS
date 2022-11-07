@@ -27,7 +27,7 @@ Section .reformas p .contactanos, .card .card-body a, Section .nosotros p .conta
     transition: .3s;
     transform: scale(1, 1.2); }
 
-Section h1, .nuestrosServicios, .container-fluid .buscador, .container-fluid .servicios {
+Section h1, .nuestrosServicios, .container-fluid .buscador, .servicios {
   color: #ee7009;
   text-align: left;
   font-family: "Oswald", sans-serif;
@@ -52,6 +52,56 @@ Section h2 {
   border: dotted 2px rgba(14, 55, 131, 0.404);
   border-radius: 15px;
   color: aliceblue; }
+
+.modalContainer {
+  width: 80%;
+  margin: 0 10%;
+  max-height: 75vh;
+  color: #fff;
+  background-color: #504d4d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none; }
+  .modalContainer .modalHeader {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0909;
+    color: #fff;
+    width: 100%; }
+    .modalContainer .modalHeader .modalHeaderTitle {
+      justify-self: start; }
+    .modalContainer .modalHeader .modalHeaderButton {
+      cursor: pointer; }
+  .modalContainer .modalContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    background-color: #504d4d; }
+    .modalContainer .modalContent h3 {
+      font-size: 18px; }
+    .modalContainer .modalContent .imgModal {
+      width: 120px;
+      height: 120px; }
+    .modalContainer .modalContent .deleteProduct {
+      font-size: 25px;
+      color: red;
+      font-weight: 100; }
+    .modalContainer .modalContent .deleteProduct {
+      cursor: pointer; }
+  .modalContainer .totalBuying {
+    color: aqua;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px; }
 
 * {
   margin: 0;
@@ -115,7 +165,9 @@ Section .reformas {
   padding: 0; }
 
 .card {
-  height: 450px; }
+  height: 450px;
+  display: flex;
+  flex-direction: row; }
   .card:hover {
     font-weight: 100;
     transform: scale(1, 1.04);
@@ -182,6 +234,9 @@ Section .reformas {
 
 .navbar-brand .img {
   width: 100px; }
+
+.imgCarrito {
+  width: 50px; }
 
 .navbar-nav .nav-item a {
   color: black;
@@ -322,21 +377,20 @@ Section .nosotros {
       font-size: 2rem;
       margin: 2rem;
       color: coral; }
-    .body .form div {
+    .body .form .formulario {
       display: flex;
-      flex-direction: column;
-      margin: 3rem; }
-      .body .form div input {
+      flex-direction: column; }
+      .body .form .formulario .input {
         height: 2.5rem;
         width: 350px;
         border-radius: 15px;
         background-color: #c6c6c6;
         text-align: center;
         margin-top: 1rem; }
-        .body .form div input:hover {
+        .body .form .formulario .input:hover {
           background-color: #111;
           color: #fff; }
-      .body .form div .submit {
+      .body .form .formulario .submit {
         animation-name: cambioColor;
         animation-duration: 10s;
         animation-iteration-count: infinite;
@@ -373,29 +427,55 @@ Section .nosotros {
   .card {
     margin: .3rem; } }
 
-.container-fluid .buscador .inputB {
-  border-radius: 5px;
-  border-color: #0099ff;
-  background-color: #e9e1e1;
-  width: 40vw; }
+.container-fluid .buscador {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end; }
+  .container-fluid .buscador .inputB {
+    border-radius: 5px;
+    border-color: #0099ff;
+    background-color: #e9e1e1;
+    width: 20vw;
+    height: 30px; }
 
-.container-fluid .buscador #botonInput {
+.container-fluid #botonInput {
   border-radius: 5px;
   border-color: #0099ff;
   width: 20vw;
+  height: 30px;
   background-color: #5779e7; }
-  .container-fluid .buscador #botonInput:hover {
+  .container-fluid #botonInput:hover {
     background-color: #0a0a7e;
     color: #83dbf1;
     font-weight: 100;
     transition: .3s;
     transform: scale(1, 1.2); }
 
+.imgCarrito {
+  width: 40px; }
+
+.cantidadCarrito {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 18px;
+  padding: 5px;
+  top: 37px;
+  right: 14px;
+  position: absolute;
+  display: none; }
+
 #carrito {
   margin-top: 3rem;
   border-radius: 5px;
   border-color: #0099ff;
   width: 10vw; }
+
+.restar {
+  cursor: pointer; }
+
+.sumar {
+  cursor: pointer; }
 
 * {
   margin: 0;

@@ -7,7 +7,9 @@
 .card {
     @extend %card;
     height: 450px;
-
+    display: flex;
+    flex-direction: row;
+    
     &:hover {
         font-weight: 100;
         transform: scale(1, 1.04);
